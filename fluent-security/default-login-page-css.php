@@ -16,31 +16,26 @@ function fluent_security_custom_button_styles()
         }
         
         /* Magic Login Show Button */
-        .fls_magic_show_btn {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+        button.fls_magic_show_btn{
+            background: red;
+            border: red;
+            padding: 7px;
+        }
+        button.fls_magic_show_btn:hover {
+            background: red;
+            border: red;
+            padding: 7px;
         }
         
-        .fls_magic_show_btn:hover {
-            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%) !important;
+        /* 2FA Confirm Button */
+        button#fls_2fa_confirm {
+            background: #417824 !important;
+            border: 1px solid #417824 !important;
         }
         
-        /* 2FA Confirm Button - targeting common selectors */
-        input[type='submit'][value*='Confirm'], 
-        input[type='submit'][value*='Verify'],
-        .fls_2fa_form input[type='submit'],
-        #fls_2fa_confirm_btn,
-        button[name*='2fa'],
-        button[name*='confirm'] {
-            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
-        }
-        
-        input[type='submit'][value*='Confirm']:hover, 
-        input[type='submit'][value*='Verify']:hover,
-        .fls_2fa_form input[type='submit']:hover,
-        #fls_2fa_confirm_btn:hover,
-        button[name*='2fa']:hover,
-        button[name*='confirm']:hover {
-            box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4) !important;
+        button#fls_2fa_confirm:hover {
+            background: #d64709ff !important;
+            border: 1px solid #d64709ff !important;
         }
         ";
 
