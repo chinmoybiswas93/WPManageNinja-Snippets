@@ -1,0 +1,7 @@
+/* Disable Comments On Fluent Community */
+.feed_reaction_meta:not(.fcom_reactions_count),
+.fcom_feed_footer_actions li.fcom_comment_btn_wrap,
+.feed_comments,
+.feed_comment {
+  display: none;
+}
