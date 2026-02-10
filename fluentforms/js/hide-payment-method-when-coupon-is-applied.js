@@ -34,3 +34,13 @@ jQuery(document).ready(function ($) {
   // Also trigger on page load in case a value is pre-set
   updateRadioField()
 })
+
+$(document).ready(function () {
+  const url = $form.find("[name='hidden']").val();
+  // console.log(url);
+  $form.on('fluentform_submission_success', function () {
+    // window.open(url, '_blank')
+    console.log('submission success')
+    console.log(url)
+  })
+})
