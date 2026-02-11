@@ -13,9 +13,11 @@ add_filter('fluentform/insert_response_data', function ($formData, $formId, $inp
         return $formData;
     }
 
+    // Current email value
     $currentEmail = isset($formData['email']) ? $formData['email'] : '';
 
-    $newEmail = 'test@test.com'; // Replace with your email
+    // Replace with your email with your logic
+    $newEmail = 'test@test.com'; 
 
     $formData['email'] = $newEmail;
 
