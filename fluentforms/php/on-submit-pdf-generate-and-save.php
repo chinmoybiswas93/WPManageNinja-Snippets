@@ -4,7 +4,7 @@ add_action('fluentform/submission_inserted', 'generate_fluentpdf_from_template',
 
 function generate_fluentpdf_from_template($entry_id, $form_data, $form)
 {
-    if ((int) $form->id !== 514) {
+    if ((int) $form->id !== 1) {
         return;
     }
 
